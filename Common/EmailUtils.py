@@ -15,7 +15,7 @@ def sendMail(send_from, send_to, text):
     msg = MIMEText(text, 'html', 'utf-8')
     msg['From'] = Header('测试服务', 'utf-8')
     msg['To'] = Header('测试人员', 'utf-8')
-    subject = "[Automation]TestReport_"+str(cc.getCurrentTime())
+    subject = "[Automation]TestReport_" + str(cc.getCurrentTime())
     msg['Subject'] = subject
 
     try:
@@ -28,8 +28,8 @@ def sendMail(send_from, send_to, text):
     except smtplib.SMTPException:
         print('error')
 
-if __name__ == '__main__':
 
+if __name__ == '__main__':
     mail_msg = """
     <p>Python 邮件发送测试...</p>
     <p><a href="http://www.runoob.com">这是一个链接</a></p>
