@@ -1,3 +1,4 @@
+# coding=utf-8
 import unittest
 import time
 from Common import CommonConfiguration, LogUtils
@@ -28,7 +29,7 @@ class TestLogin(unittest.TestCase):
 
         time.sleep(3)
         title = page.getTitle()
-        self.assertEqual(title, '田田网')
+        self.assertEqual(title, '田田网1')
         page.quit()
 
     def test_2(self):
@@ -51,7 +52,6 @@ class TestLogin(unittest.TestCase):
         title = page.getTitle()
         self.assertEqual(title, '田田网')
         page.quit()
-
 
 
 if __name__ == '__main__':

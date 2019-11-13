@@ -1,3 +1,4 @@
+# coding=utf-8
 import smtplib
 from datetime import datetime
 from email.header import Header

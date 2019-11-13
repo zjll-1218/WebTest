@@ -1,3 +1,4 @@
+# coding=utf-8
 from unittest import TestLoader, TestSuite
 from HtmlTestRunner import HTMLTestRunner
 from TestCases import TestLogin
